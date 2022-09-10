@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// This is the player script!
 public class Player : MonoBehaviour
 {
     Rigidbody body;
