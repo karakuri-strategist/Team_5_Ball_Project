@@ -19,9 +19,12 @@ public class BallMovement : MonoBehaviour
     public float boostReplenishSeconds = 5f;
     private float boostLeft;
     private bool boostPressed = false;
+
+    private Vector3 initialPosition;
     
     
     private Vector3 _facing;
+    private Vector3 initialFacing;
     public Vector3 facing
     {
         get { return this._facing; }
@@ -35,9 +38,11 @@ public class BallMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        initialPosition = transform.position;
         boostLeft = boostSeconds;
         body = GetComponent<Rigidbody>();
         _facing = transform.forward;
+        initialFacing = _facing;
     }
 
     private float GetForce()
@@ -54,9 +59,24 @@ public class BallMovement : MonoBehaviour
         return maxSpeed;
     }
 
+    private void CheckIfFallen()
+    {
+        if(transform.position.y < -10)
+        {
+            ResetPlayer();
+        }
+    }
+
+    private void ResetPlayer()
+    {
+        transform.position = initialPosition;
+        _facing = initialFacing;
+    }
+
     // Update is called once per frame
     void FixedUpdate()
     {
+        CheckIfFallen();
         if(boostPressed)
         {
             if (boostLeft > 0)
@@ -127,6 +147,11 @@ public class BallMovement : MonoBehaviour
 
     public void OnCollisionEnter(Collision col)
     {
+        if(col.gameObject.tag == "Obstacle")
+        {
+            ResetPlayer();
+            
+        }
         Vector3 delta = Vector3.zero;
         List<ContactPoint> list = new List<ContactPoint>();
         col.GetContacts(list);
