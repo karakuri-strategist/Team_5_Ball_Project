@@ -114,6 +114,12 @@ public class BallMovement : MonoBehaviour
 
         if (commandedDirection.y > 0)
             commandedDirection.y = 0;
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            ResetPlayer();
+
+        }
     }
 
     public void Jump(InputAction.CallbackContext ctx)
