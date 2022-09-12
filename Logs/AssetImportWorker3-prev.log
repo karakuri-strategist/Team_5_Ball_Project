@@ -1,0 +1,340 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.8f1 (b30333d56e81) revision 11731763'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19043) 64bit Core' Language: 'en' Physical Memory: 7979 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.8f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+C:/Users/megam/UnityProjects/Team_5_Ball_Project/Team_5_Ball_Project-master
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+50852
+Successfully changed project path to: C:/Users/megam/UnityProjects/Team_5_Ball_Project/Team_5_Ball_Project-master
+C:/Users/megam/UnityProjects/Team_5_Ball_Project/Team_5_Ball_Project-master
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 98.39 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.8f1 (b30333d56e81)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/megam/UnityProjects/Team_5_Ball_Project/Team_5_Ball_Project-master/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) UHD Graphics (ID=0x9b41)
+    Vendor:   Intel
+    VRAM:     3989 MB
+    Driver:   27.20.100.8984
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56412
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.013582 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 99.35 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.844 seconds
+Domain Reload Profiling:
+	ReloadAssembly (845ms)
+		BeginReloadAssembly (115ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (576ms)
+			LoadAssemblies (111ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (129ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (339ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (99ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (139ms)
+				ProcessInitializeOnLoadMethodAttributes (88ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.012268 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\megam\UnityProjects\Team_5_Ball_Project\Team_5_Ball_Project-master\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\megam\UnityProjects\Team_5_Ball_Project\Team_5_Ball_Project-master\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 141.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  6.413 seconds
+Domain Reload Profiling:
+	ReloadAssembly (6414ms)
+		BeginReloadAssembly (165ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (5999ms)
+			LoadAssemblies (3115ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (882ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (65ms)
+			SetupLoadedEditorAssemblies (1905ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (142ms)
+				BeforeProcessingInitializeOnLoad (147ms)
+				ProcessInitializeOnLoadAttributes (492ms)
+				ProcessInitializeOnLoadMethodAttributes (1102ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 0.80 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3724 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 30 unused Assets / (111.4 KB). Loaded Objects now: 4182.
+Memory consumption went from 132.7 MB to 132.6 MB.
+Total: 4.850300 ms (FindLiveObjects: 0.359800 ms CreateObjectMapping: 0.238200 ms MarkObjects: 4.064800 ms  DeleteObjects: 0.186300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 149666.980400 seconds.
+  path: Assets/CityDeco/detail_awningWide.fbx
+  artifactKey: Guid(493460080da780c418877ca8649043ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CityDeco/detail_awningWide.fbx using Guid(493460080da780c418877ca8649043ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05356592f24bdfdc82843ff9841276d0') in 0.455301 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/CityDeco/low_buildingM.fbx
+  artifactKey: Guid(d3e41e99139b29a40a497d1ae5b78ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CityDeco/low_buildingM.fbx using Guid(d3e41e99139b29a40a497d1ae5b78ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91d47071c5fd48c1382a74b5712991fd') in 0.067641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/CityDeco/low_buildingG.fbx
+  artifactKey: Guid(2742df07a1a9c6f4fbd408814231eff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CityDeco/low_buildingG.fbx using Guid(2742df07a1a9c6f4fbd408814231eff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8c121f8bf2790c80021b34f1e9cb17b') in 0.075148 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/CityDeco/large_buildingB.fbx
+  artifactKey: Guid(b85f683290e9c9e4aa06585294f3ec00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CityDeco/large_buildingB.fbx using Guid(b85f683290e9c9e4aa06585294f3ec00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a782b8ffada36109a1b97bb763b6930') in 0.120541 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000106 seconds.
+  path: Assets/CityDeco/sign_hospital.fbx
+  artifactKey: Guid(44de7ade39e873e4d94573e76741e78b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CityDeco/sign_hospital.fbx using Guid(44de7ade39e873e4d94573e76741e78b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e78ebcce1fb453c04814caabc0e022f') in 0.086691 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000097 seconds.
+  path: Assets/CityDeco/large_buildingG.fbx
+  artifactKey: Guid(74dd4f6ed0e0c1945acb13cc385f6119) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CityDeco/large_buildingG.fbx using Guid(74dd4f6ed0e0c1945acb13cc385f6119) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29df6653b9b4ab6e8bf8adfe13a33926') in 0.104642 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/CityDeco/low_buildingK.fbx
+  artifactKey: Guid(9e7b4f103479f504994c9ba5a84a820d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CityDeco/low_buildingK.fbx using Guid(9e7b4f103479f504994c9ba5a84a820d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ccceea73113e8fa59e01db4b10f6ef6') in 0.079916 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/CityDeco/roof_side.fbx
+  artifactKey: Guid(e25250ec70e8182469951eeed6a60d2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CityDeco/roof_side.fbx using Guid(e25250ec70e8182469951eeed6a60d2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af0533f43459ef50d0955e84bf36e665') in 0.092159 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/CityDeco/skyscraperB.fbx
+  artifactKey: Guid(2b7abfa81088bda4a972601eb06d1d89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CityDeco/skyscraperB.fbx using Guid(2b7abfa81088bda4a972601eb06d1d89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '078f6e3f5fa5397706071ae43c017126') in 0.128319 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/CityDeco/large_buildingF.fbx
+  artifactKey: Guid(2d48d1791986a5d44a9c495023e88c83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CityDeco/large_buildingF.fbx using Guid(2d48d1791986a5d44a9c495023e88c83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c66965c6b6c5448580c390965a82889') in 0.122326 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/CityDeco/detail_umbrella.fbx
+  artifactKey: Guid(dc9998bb0395b184c9ca6cfb3235365c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CityDeco/detail_umbrella.fbx using Guid(dc9998bb0395b184c9ca6cfb3235365c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '922ca1f34afa79068dea10cf13b862ce') in 0.110669 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/CityDeco/low_buildingD.fbx
+  artifactKey: Guid(20a91a5234bf7c346a358439937a3dc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CityDeco/low_buildingD.fbx using Guid(20a91a5234bf7c346a358439937a3dc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '147b878164d4f78b90bcb746781f1818') in 0.070941 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000119 seconds.
+  path: Assets/CityDeco/low_buildingL.fbx
+  artifactKey: Guid(0b32ae597c7512f43b7830fae54c6c97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CityDeco/low_buildingL.fbx using Guid(0b32ae597c7512f43b7830fae54c6c97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c78693bc75ecb37ede5f19b88c3bfbf6') in 0.074897 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/CityDeco/low_buildingH.fbx
+  artifactKey: Guid(070e3424776e1a444aebbaacdebb48ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CityDeco/low_buildingH.fbx using Guid(070e3424776e1a444aebbaacdebb48ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c941508dec26eb90dea1aa41fa654e0') in 0.060847 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/CityDeco/low_wideA.fbx
+  artifactKey: Guid(67bcbfba711cdd14f8cfe7449da8487e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CityDeco/low_wideA.fbx using Guid(67bcbfba711cdd14f8cfe7449da8487e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99c78dd6ca2c30c2ae95822149cf1506') in 0.059326 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/CityDeco/detail_overhang.fbx
+  artifactKey: Guid(e90ff1dcfa033c049852d288ff9a0bb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CityDeco/detail_overhang.fbx using Guid(e90ff1dcfa033c049852d288ff9a0bb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dfe89c6d63b92ca8ce663161b5544d4') in 0.094222 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/CityDeco/low_buildingA.fbx
+  artifactKey: Guid(604f7bb4d3ace1e48ab079082164cad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CityDeco/low_buildingA.fbx using Guid(604f7bb4d3ace1e48ab079082164cad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1173d319e05ddc93fa42f88456ac7e37') in 0.098771 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/CityDeco/detail_umbrellaDetailed.fbx
+  artifactKey: Guid(9407eb842e769be418785f01a3899df2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CityDeco/detail_umbrellaDetailed.fbx using Guid(9407eb842e769be418785f01a3899df2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e96ff45b91d9cda99a9ae413718e897') in 0.086930 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/CityDeco/roof_center.fbx
+  artifactKey: Guid(0a7f4b0db2ca77f4d827944ba4aa7cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CityDeco/roof_center.fbx using Guid(0a7f4b0db2ca77f4d827944ba4aa7cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4348a9634e3c3a401738682866d8f3d9') in 0.054663 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.253223 seconds.
+  path: Assets/CityDeco/skyscraperD.fbx
+  artifactKey: Guid(2b6a95ef1721a01409b8c1da791dcbf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CityDeco/skyscraperD.fbx using Guid(2b6a95ef1721a01409b8c1da791dcbf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '904dcd318a47353436fecf65bfa14799') in 0.101041 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/CityDeco/wall_windowF.fbx
+  artifactKey: Guid(f9f99e0712ae227409c4620445eff948) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CityDeco/wall_windowF.fbx using Guid(f9f99e0712ae227409c4620445eff948) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be105580857e60c35b7481b493a964c9') in 0.071041 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/CityDeco/wall_windowD.fbx
+  artifactKey: Guid(0b3ddfc5b82e6d64ea134caf9024a909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CityDeco/wall_windowD.fbx using Guid(0b3ddfc5b82e6d64ea134caf9024a909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb4c8040c8f1e95df142265ae744505d') in 0.093557 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/CityDeco/wall_solid.fbx
+  artifactKey: Guid(d7ab8098e2822ed4490b608914c314ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CityDeco/wall_solid.fbx using Guid(d7ab8098e2822ed4490b608914c314ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8d59c972cbbbc845f331e5735bbe7d5') in 0.093114 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/CityDeco/small_buildingA.fbx
+  artifactKey: Guid(b72c485d1845a1d45be4e1790150ca4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CityDeco/small_buildingA.fbx using Guid(b72c485d1845a1d45be4e1790150ca4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f65d97b3e22cc0b59602b581d4a4f807') in 0.091483 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/CityDeco/wall_windowC.fbx
+  artifactKey: Guid(33289be7f06d03f4ab29cef82a231cbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CityDeco/wall_windowC.fbx using Guid(33289be7f06d03f4ab29cef82a231cbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bded377e2ff04a18478e03b23dbe90ba') in 0.076008 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/CityDeco/wall_windowA.fbx
+  artifactKey: Guid(5886a0bedc7903c4687e51f901e20fb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CityDeco/wall_windowA.fbx using Guid(5886a0bedc7903c4687e51f901e20fb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c7155e6a58a0ed6b0fc952c9b2f34dd') in 0.083610 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/CityDeco/small_buildingB.fbx
+  artifactKey: Guid(b540bc769dd6ca54e91d70462f037242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CityDeco/small_buildingB.fbx using Guid(b540bc769dd6ca54e91d70462f037242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d2004d1cf15336c469ff0f04c58415b') in 0.095102 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/CityDeco/wall_doorB.fbx
+  artifactKey: Guid(46b2d82b1ece73b499f060e7082c8e9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CityDeco/wall_doorB.fbx using Guid(46b2d82b1ece73b499f060e7082c8e9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07d134b2b5fef70c0ea1e99b360af283') in 0.076006 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/CityDeco/wall_windowB.fbx
+  artifactKey: Guid(5245d6b6a7424ee428c1263fe6b33cc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CityDeco/wall_windowB.fbx using Guid(5245d6b6a7424ee428c1263fe6b33cc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc0128bd5f8a0676eaa3f19ea867498a') in 0.090337 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
