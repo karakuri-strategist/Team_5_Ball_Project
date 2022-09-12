@@ -5,21 +5,19 @@ using UnityEngine;
 public class FollowPlayer : MonoBehaviour
 {
     [SerializeField]
-    GameObject player;
-    Transform playerTransform;
-    Rigidbody playerBody;
-    Vector3 offset;
+    Player player;
+    public Vector3 forward;
     // Start is called before the first frame update
     void Start()
     {
-        playerTransform = player.GetComponent<Transform>();
-        playerBody = player.GetComponent<Rigidbody>();
-        offset = transform.position - playerTransform.position;
+        forward = player.forward;
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = playerTransform.position + offset;
+        transform.position = player.transform.position;
+        forward = Vector3.Lerp(forward, player.forward, 0.1f);
+        transform.rotation = Quaternion.LookRotation(player.forward);
     }
 }
