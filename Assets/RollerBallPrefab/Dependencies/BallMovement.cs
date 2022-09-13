@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class BallMovement : MonoBehaviour
 {
-    
-    
+
+
     public float jumpForce = 150f;
     public Slider slider;
 
@@ -29,8 +29,8 @@ public class BallMovement : MonoBehaviour
     private bool speedPadBoost = false;
 
     private Vector3 initialPosition;
-    
-    
+
+
     private Vector3 _facing;
     private Vector3 initialFacing;
     public Vector3 facing
@@ -82,7 +82,7 @@ public class BallMovement : MonoBehaviour
 
     private void CheckIfFallen()
     {
-        if(transform.position.y < -10)
+        if (transform.position.y < -10)
         {
             ResetPlayer();
         }
@@ -98,7 +98,7 @@ public class BallMovement : MonoBehaviour
     void FixedUpdate()
     {
         CheckIfFallen();
-        if(boostPressed)
+        if (boostPressed)
         {
             if (boostLeft > 0)
                 boostLeft -= Time.deltaTime;
@@ -107,7 +107,7 @@ public class BallMovement : MonoBehaviour
         }
         else
         {
-            if(boostLeft < boostSeconds)
+            if (boostLeft < boostSeconds)
                 boostLeft += Time.deltaTime * boostSeconds / boostReplenishSeconds;
             if (boostLeft > boostSeconds)
                 boostLeft = boostSeconds;
@@ -160,15 +160,15 @@ public class BallMovement : MonoBehaviour
 
     public void Boost(InputAction.CallbackContext ctx)
     {
-        if(ctx.performed)
+        if (ctx.performed)
         {
             boostPressed = true;
         }
-        if(ctx.canceled)
+        if (ctx.canceled)
         {
             boostPressed = false;
         }
-            
+
     }
 
     public void Move(InputAction.CallbackContext ctx)
@@ -180,7 +180,7 @@ public class BallMovement : MonoBehaviour
 
     public void OnCollisionEnter(Collision col)
     {
-        if(col.gameObject.tag == "Obstacle")
+        if (col.gameObject.tag == "Obstacle")
         {
             ResetPlayer();
         }
@@ -188,15 +188,15 @@ public class BallMovement : MonoBehaviour
         Vector3 delta = Vector3.zero;
         List<ContactPoint> list = new List<ContactPoint>();
         col.GetContacts(list);
-       // print("Landing: " + col.contactCount);
-        for(int i = 0; i < col.contactCount; i++)
+        // print("Landing: " + col.contactCount);
+        for (int i = 0; i < col.contactCount; i++)
         {
             delta += transform.position - list[i].point;
             //print(transform.position + " - " + list[i].point + " " + delta);
         }
         delta /= col.contactCount;
         //Debug.Log("Landing: Done " + delta + " --- " + Mathf.Abs(delta.y));
-        if(Mathf.Abs(delta.y)>0.25)
+        if (Mathf.Abs(delta.y) > 0.25)
             isJumping = false;
     }
 
@@ -211,7 +211,7 @@ public class BallMovement : MonoBehaviour
 
     private void OnTriggerExit(Collider col)
     {
-        if(col.gameObject.tag == "SpeedPad")
+        if (col.gameObject.tag == "SpeedPad")
         {
             StartCoroutine(SpeedPadBoostExpiration());
         }

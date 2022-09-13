@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/ALEC_ONLY_NO_TOUCHY.unity
+- path: Assets/Scenes/AlecScene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
