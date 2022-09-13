@@ -15,7 +15,7 @@ D:/GithubProject/Team_5_Ball_Project
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-62480
+52927
 Successfully changed project path to: D:/GithubProject/Team_5_Ball_Project
 D:/GithubProject/Team_5_Ball_Project
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ D:/GithubProject/Team_5_Ball_Project
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 78.31 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 99.49 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.9f1 (ad3870b89536)
 [Subsystems] Discovering subsystems at path D:/2021.3.9f1/Editor/Data/Resources/UnitySubsystems
@@ -63,95 +63,96 @@ Initialize mono
 Mono path[0] = 'D:/2021.3.9f1/Editor/Data/Managed'
 Mono path[1] = 'D:/2021.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/2021.3.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56084
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56592
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/2021.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002886 seconds.
+Registered in 0.002503 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 87.86 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 91.09 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.627 seconds
+- Completed reload, in  0.732 seconds
 Domain Reload Profiling:
-	ReloadAssembly (627ms)
-		BeginReloadAssembly (66ms)
+	ReloadAssembly (732ms)
+		BeginReloadAssembly (74ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (463ms)
-			LoadAssemblies (65ms)
+		EndReloadAssembly (559ms)
+			LoadAssemblies (73ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (105ms)
+			SetupTypeCache (117ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (27ms)
-			SetupLoadedEditorAssemblies (288ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (347ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (88ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (133ms)
-				ProcessInitializeOnLoadMethodAttributes (59ms)
+				RefreshPlugins (91ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (171ms)
+				ProcessInitializeOnLoadMethodAttributes (76ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005513 seconds.
+Registered in 0.006786 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\GithubProject\Team_5_Ball_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\GithubProject\Team_5_Ball_Project\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.078 seconds
+- Completed reload, in  1.501 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1079ms)
-		BeginReloadAssembly (121ms)
+	ReloadAssembly (1502ms)
+		BeginReloadAssembly (156ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (10ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (19ms)
-		EndReloadAssembly (835ms)
-			LoadAssemblies (91ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (1193ms)
+			LoadAssemblies (115ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (321ms)
+			SetupTypeCache (447ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (54ms)
-			SetupLoadedEditorAssemblies (338ms)
+			RebuildScriptCaches (71ms)
+			SetupLoadedEditorAssemblies (498ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (89ms)
-				ProcessInitializeOnLoadAttributes (215ms)
-				ProcessInitializeOnLoadMethodAttributes (27ms)
-				AfterProcessingInitializeOnLoad (2ms)
+				BeforeProcessingInitializeOnLoad (114ms)
+				ProcessInitializeOnLoadAttributes (324ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
+				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 1.01 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3382 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (111.4 KB). Loaded Objects now: 3839.
+Unloading 27 unused Assets / (111.4 KB). Loaded Objects now: 3840.
 Memory consumption went from 120.6 MB to 120.4 MB.
-Total: 3.287300 ms (FindLiveObjects: 0.270400 ms CreateObjectMapping: 0.240800 ms MarkObjects: 2.679800 ms  DeleteObjects: 0.095300 ms)
+Total: 4.736400 ms (FindLiveObjects: 0.479400 ms CreateObjectMapping: 0.383500 ms MarkObjects: 3.690100 ms  DeleteObjects: 0.181700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -159,73 +160,70 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 11342.224018 seconds.
-  path: Assets/EnvironmentMaterials/Materials/foliage.mat
-  artifactKey: Guid(c7986776abee1c54fa9b565a0cde49e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/EnvironmentMaterials/Materials/foliage.mat using Guid(c7986776abee1c54fa9b565a0cde49e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e12818684cc4d108aa59fa90ab5d9b8c') in 0.128502 seconds 
+  Time since last request: 15834.481948 seconds.
+  path: Assets/EnvironmentMaterials/Moutain.fbx
+  artifactKey: Guid(0776a61740afc9a45a2728aca792718d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EnvironmentMaterials/Moutain.fbx using Guid(0776a61740afc9a45a2728aca792718d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '759281b7010b8012deaf4707b8977d2a') in 0.314943 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2082.196846 seconds.
-  path: Assets/SkySeries Freebie/MegaSun.mat
-  artifactKey: Guid(cede08c9fc471e64884909cd4bbeaf59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SkySeries Freebie/MegaSun.mat using Guid(cede08c9fc471e64884909cd4bbeaf59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1016bb7e7a95216e873ec17fb8b81a5b') in 0.085555 seconds 
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 6.08 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 20 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 20 unused Assets / (75.8 KB). Loaded Objects now: 3881.
-Memory consumption went from 58.0 MB to 57.9 MB.
-Total: 14.177400 ms (FindLiveObjects: 0.269800 ms CreateObjectMapping: 0.231100 ms MarkObjects: 13.587900 ms  DeleteObjects: 0.087600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  colorSpace: 1 -> 0
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:graphics/active-color-space: 03000000000000000000000000000000 -> 02000000000000000000000000000000
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  Time since last request: 0.000036 seconds.
+  path: Assets/EnvironmentMaterials/New Material 4.mat
+  artifactKey: Guid(cb588f7c25686f148ac527e3b89c1ae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EnvironmentMaterials/New Material 4.mat using Guid(cb588f7c25686f148ac527e3b89c1ae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc6fb3f23e0a6d928827b7205fd872ae') in 0.040787 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 188.532299 seconds.
-  path: Assets/SkySeries Freebie/MegaSun.mat
-  artifactKey: Guid(cede08c9fc471e64884909cd4bbeaf59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SkySeries Freebie/MegaSun.mat using Guid(cede08c9fc471e64884909cd4bbeaf59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bf7dc31856fcebe585e2fa50fd6ef50') in 0.062342 seconds 
+  Time since last request: 0.000039 seconds.
+  path: Assets/EnvironmentMaterials/New Material.mat
+  artifactKey: Guid(3f96c2848c03d384e9a00f2eaa1b2494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EnvironmentMaterials/New Material.mat using Guid(3f96c2848c03d384e9a00f2eaa1b2494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cc3aa05d2d72b81dc7700408c4e2989') in 0.033551 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 84.351566 seconds.
-  path: Assets/SkySeries Freebie/FreebieHdri/MegaSun4k.hdr
-  artifactKey: Guid(8967f190ed29c46418093a47d66daee8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SkySeries Freebie/FreebieHdri/MegaSun4k.hdr using Guid(8967f190ed29c46418093a47d66daee8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc46e6d20e2fdea8314c78de515040d1') in 0.092983 seconds 
+  Time since last request: 0.000062 seconds.
+  path: Assets/EnvironmentMaterials/地球 星空.hdr
+  artifactKey: Guid(4e2969923abf1c54481900ce82847c86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EnvironmentMaterials/地球 星空.hdr using Guid(4e2969923abf1c54481900ce82847c86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '413bb5001d8f2eb13e84648c924998ff') in 0.053709 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/SkySeries Freebie/FreebieHdri/MegaSunFront.hdr
-  artifactKey: Guid(b915aaf1fa7dbd54a9e60e42712933a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SkySeries Freebie/FreebieHdri/MegaSunFront.hdr using Guid(b915aaf1fa7dbd54a9e60e42712933a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb8dbb0f3d399b54c806febe7d0d4b8a') in 0.028944 seconds 
+  Time since last request: 0.000028 seconds.
+  path: Assets/EnvironmentMaterials/eleph.fbx
+  artifactKey: Guid(156a3c9b7e15e694d8f622ca19eee3e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EnvironmentMaterials/eleph.fbx using Guid(156a3c9b7e15e694d8f622ca19eee3e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7081aa82638481acd7804dc952f59c1') in 0.285809 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/SkySeries Freebie/FreebieHdri/MegaSunTop.hdr
-  artifactKey: Guid(47d70ba0d1c1c3e4ab451b6bc37b0ebe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SkySeries Freebie/FreebieHdri/MegaSunTop.hdr using Guid(47d70ba0d1c1c3e4ab451b6bc37b0ebe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fe372a59c6b95cef68320f8c2f2f1ac') in 0.021504 seconds 
+  Time since last request: 0.000036 seconds.
+  path: Assets/EnvironmentMaterials/Road.fbx
+  artifactKey: Guid(1d0dc545711988542ace9701bb3effb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EnvironmentMaterials/Road.fbx using Guid(1d0dc545711988542ace9701bb3effb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d29c2f8ee054b38074d3da2be489a4c') in 0.061512 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/SkySeries Freebie/FreebieHdri/MegaSunBack.hdr
-  artifactKey: Guid(4e52cbaf92b83a94cb86bed75ed34652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SkySeries Freebie/FreebieHdri/MegaSunBack.hdr using Guid(4e52cbaf92b83a94cb86bed75ed34652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '427c4f3c4d1cb066377cc67dd917e8c9') in 0.018500 seconds 
+  Time since last request: 0.000041 seconds.
+  path: Assets/EnvironmentMaterials/SPACE ship.fbx
+  artifactKey: Guid(32bcf13140977b144a3048a648dc1e21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EnvironmentMaterials/SPACE ship.fbx using Guid(32bcf13140977b144a3048a648dc1e21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '959fc620c518e2f82d4e29482a6f1857') in 0.042103 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/SkySeries Freebie/FreebieHdri/MegaSunBottom.hdr
-  artifactKey: Guid(3de85f3af41435a4c8f9d237bc1f19ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SkySeries Freebie/FreebieHdri/MegaSunBottom.hdr using Guid(3de85f3af41435a4c8f9d237bc1f19ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d252e193fcbbea0ef57a634ac04d88d') in 0.017563 seconds 
+  Time since last request: 0.000024 seconds.
+  path: Assets/EnvironmentMaterials/NeverNightTrack.fbx
+  artifactKey: Guid(b40f0e8024c366048bda9550235375e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EnvironmentMaterials/NeverNightTrack.fbx using Guid(b40f0e8024c366048bda9550235375e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faa73a97b19165c7abb9bc72ddf438bd') in 0.347267 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000350 seconds.
+  path: Assets/EnvironmentMaterials/能量力场.fbx
+  artifactKey: Guid(e0688ff8f8ed8dc44a2909afeff55ab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EnvironmentMaterials/能量力场.fbx using Guid(e0688ff8f8ed8dc44a2909afeff55ab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc8568297e6b3273299be1944e8710b1') in 0.029647 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002121 seconds.
+  path: Assets/EnvironmentMaterials/cloud.png
+  artifactKey: Guid(bc4a2fcd448f6be40aa933d583382c5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EnvironmentMaterials/cloud.png using Guid(bc4a2fcd448f6be40aa933d583382c5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9ae2074fe4fde6b13cfeca7726ec0df') in 0.031345 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.145768 seconds.
+  path: Assets/Materials/Red.mat
+  artifactKey: Guid(13a3eacf0b1b4424aa4fa6ba24863a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Red.mat using Guid(13a3eacf0b1b4424aa4fa6ba24863a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8fb6fed23f828f73573c890a3dcaf17') in 0.014164 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting
