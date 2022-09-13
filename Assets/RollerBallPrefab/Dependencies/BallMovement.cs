@@ -13,12 +13,15 @@ public class BallMovement : MonoBehaviour
 
     public float boostForce = 200f;
     public float boostMaxSpeed = 15f;
+    public float speedPadMaxSpeed = 15f;
+    public float speedPadForce = 200f;
     [Tooltip("Amount of seconds it takes boost to run out")]
     public float boostSeconds = 5f;
     [Tooltip("Amount of seconds it takes boost to replenish from empty")]
     public float boostReplenishSeconds = 5f;
     private float boostLeft;
     private bool boostPressed = false;
+    private bool speedPadBoost = false;
 
     private Vector3 initialPosition;
     
@@ -47,6 +50,8 @@ public class BallMovement : MonoBehaviour
 
     private float GetForce()
     {
+        if (speedPadBoost)
+            return speedPadForce;
         if (boostPressed && boostLeft > 0)
             return boostForce;
         return moveForce;
@@ -54,6 +59,8 @@ public class BallMovement : MonoBehaviour
 
     private float MaxSpeed()
     {
+        if (speedPadBoost)
+            return speedPadMaxSpeed;
         if (boostPressed && boostLeft > 0)
             return boostMaxSpeed;
         return maxSpeed;
@@ -92,11 +99,16 @@ public class BallMovement : MonoBehaviour
                 boostLeft = boostSeconds;
         }
         slider.value = boostLeft / boostSeconds;
-        var forwardComponent = facing * commandedDirection.z;
+        var forwardComponent = facing * (commandedDirection.z);
         var lateralComponent = Vector3.Cross(facing, Vector3.up) * -commandedDirection.x;
         var verticalComponent = new Vector3(0f, commandedDirection.y, 0f);
-
-        var force = (forwardComponent + lateralComponent + verticalComponent) * Time.deltaTime * GetForce();
+        var forceDirection = forwardComponent + lateralComponent + verticalComponent;
+        if (commandedDirection == Vector3.zero && speedPadBoost)
+        {
+            Debug.Log("facing " + facing);
+            forceDirection = facing;
+        }
+        var force = forceDirection * Time.deltaTime * GetForce();
         body.AddForce(force);
 
         if (body.velocity.magnitude > 0.001)
@@ -108,9 +120,9 @@ public class BallMovement : MonoBehaviour
         {
             _facing = transform.forward;
         }
-        
-        if (body.velocity.magnitude > MaxSpeed())
-            body.velocity = body.velocity.normalized * MaxSpeed();
+        Vector3 lateralVelocity = new Vector3(body.velocity.x, 0, body.velocity.z);
+        if (lateralVelocity.magnitude > MaxSpeed())
+            body.velocity = lateralVelocity.normalized * MaxSpeed() + new Vector3(0, body.velocity.y, 0);
 
         if (commandedDirection.y > 0)
             commandedDirection.y = 0;
@@ -156,8 +168,8 @@ public class BallMovement : MonoBehaviour
         if(col.gameObject.tag == "Obstacle")
         {
             ResetPlayer();
-            
         }
+
         Vector3 delta = Vector3.zero;
         List<ContactPoint> list = new List<ContactPoint>();
         col.GetContacts(list);
@@ -171,5 +183,28 @@ public class BallMovement : MonoBehaviour
         //Debug.Log("Landing: Done " + delta + " --- " + Mathf.Abs(delta.y));
         if(Mathf.Abs(delta.y)>0.25)
             isJumping = false;
+    }
+
+    private void OnTriggerEnter(Collider col)
+    {
+        if (col.gameObject.tag == "SpeedPad")
+        {
+            Debug.Log("Colliding");
+            speedPadBoost = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider col)
+    {
+        if(col.gameObject.tag == "SpeedPad")
+        {
+            StartCoroutine(SpeedPadBoostExpiration());
+        }
+    }
+
+    IEnumerator SpeedPadBoostExpiration()
+    {
+        yield return new WaitForSeconds(1.5f);
+        speedPadBoost = false;
     }
 }
