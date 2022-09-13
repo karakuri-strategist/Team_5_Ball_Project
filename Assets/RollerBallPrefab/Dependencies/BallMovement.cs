@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class BallMovement : MonoBehaviour
 {
     public float moveForce = 150f;
-    public float maxSpeed = 10f;
+    public float maxSpeed = 50f;
     public float jumpForce = 150f;
     public Slider slider;
 
