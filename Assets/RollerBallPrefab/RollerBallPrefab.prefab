@@ -589,13 +589,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c5d99303ba919e4b8780da427f8e165, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveForce: 150
-  maxSpeed: 10
   jumpForce: 250
   slider: {fileID: 1344343315}
-  boostForce: 300
-  boostMaxSpeed: 20
-  boostSeconds: 5
+  maxSpeed: 20
+  moveForceForward: 75
+  moveForceSide: 75
+  boostMaxSpeed: 30
+  boostForceForward: 150
+  boostForceSide: 75
+  speedPadMaxSpeed: 30
+  speedPadForceForward: 600
+  speedPadForceSide: 75
+  boostSeconds: 2
   boostReplenishSeconds: 5
 --- !u!114 &4764733898684998107
 MonoBehaviour:

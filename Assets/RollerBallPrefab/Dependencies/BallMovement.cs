@@ -6,15 +6,20 @@ using UnityEngine.UI;
 
 public class BallMovement : MonoBehaviour
 {
-    public float moveForce = 150f;
-    public float maxSpeed = 50f;
+    
+    
     public float jumpForce = 150f;
     public Slider slider;
 
-    public float boostForce = 200f;
-    public float boostMaxSpeed = 15f;
-    public float speedPadMaxSpeed = 15f;
-    public float speedPadForce = 200f;
+    public float maxSpeed = 20f;
+    public float moveForceForward = 150f;
+    public float moveForceSide = 150f;
+    public float boostMaxSpeed = 30;
+    public float boostForceForward = 200f;
+    public float boostForceSide = 200f;
+    public float speedPadMaxSpeed = 30f;
+    public float speedPadForceForward = 200f;
+    public float speedPadForceSide = 200f;
     [Tooltip("Amount of seconds it takes boost to run out")]
     public float boostSeconds = 5f;
     [Tooltip("Amount of seconds it takes boost to replenish from empty")]
@@ -48,13 +53,22 @@ public class BallMovement : MonoBehaviour
         initialFacing = _facing;
     }
 
-    private float GetForce()
+    private float GetForceForward()
     {
         if (speedPadBoost)
-            return speedPadForce;
+            return speedPadForceForward;
         if (boostPressed && boostLeft > 0)
-            return boostForce;
-        return moveForce;
+            return boostForceForward;
+        return moveForceForward;
+    }
+
+    private float GetForceSide()
+    {
+        if (speedPadBoost)
+            return speedPadForceSide;
+        if (boostPressed && boostLeft > 0)
+            return boostForceSide;
+        return moveForceSide;
     }
 
     private float MaxSpeed()
@@ -102,13 +116,14 @@ public class BallMovement : MonoBehaviour
         var forwardComponent = facing * (commandedDirection.z);
         var lateralComponent = Vector3.Cross(facing, Vector3.up) * -commandedDirection.x;
         var verticalComponent = new Vector3(0f, commandedDirection.y, 0f);
-        var forceDirection = forwardComponent + lateralComponent + verticalComponent;
         if (commandedDirection == Vector3.zero && speedPadBoost)
         {
-            Debug.Log("facing " + facing);
-            forceDirection = facing;
+            forwardComponent = facing;
         }
-        var force = forceDirection * Time.deltaTime * GetForce();
+        var force =
+            (forwardComponent * GetForceForward()
+            + lateralComponent * GetForceSide()
+            + verticalComponent * jumpForce) * Time.deltaTime;
         body.AddForce(force);
 
         if (body.velocity.magnitude > 0.001)
@@ -139,7 +154,7 @@ public class BallMovement : MonoBehaviour
         if (!isJumping)
         {
             isJumping = true;
-            commandedDirection.y = jumpForce;
+            commandedDirection.y = 1;
         }
     }
 
