@@ -87,7 +87,7 @@ public class BallMovement : MonoBehaviour
         else
         {
             if(boostLeft < boostSeconds)
-                boostLeft += Time.deltaTime * boostReplenishSeconds / boostSeconds;
+                boostLeft += Time.deltaTime * boostSeconds / boostReplenishSeconds;
             if (boostLeft > boostSeconds)
                 boostLeft = boostSeconds;
         }
