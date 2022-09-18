@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using System;
 
 public class BallMovement : MonoBehaviour
 {
@@ -10,7 +11,6 @@ public class BallMovement : MonoBehaviour
 
     public float jumpForce = 150f;
     public Slider slider;
-
     public float maxSpeed = 20f;
     public float moveForceForward = 150f;
     public float moveForceSide = 150f;
@@ -20,12 +20,20 @@ public class BallMovement : MonoBehaviour
     public float speedPadMaxSpeed = 30f;
     public float speedPadForceForward = 200f;
     public float speedPadForceSide = 200f;
+    
     [Tooltip("Amount of seconds it takes boost to run out")]
     public float boostSeconds = 5f;
     [Tooltip("Amount of seconds it takes boost to replenish from empty")]
     public float boostReplenishSeconds = 5f;
     private float boostLeft;
     private bool boostPressed = false;
+    public float driftScale = 20;
+    [Tooltip("Dictates how much velocity is lost to friction while drifting")]
+    public float driftLost = 0.2f;
+    public ResetHandler resetHandler;
+
+    private bool driftPressed = false;
+    private Vector3 driftDirection = Vector3.zero;
     private bool speedPadBoost = false;
 
     private Vector3 initialPosition;
@@ -46,6 +54,7 @@ public class BallMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        resetHandler.ResetEvent += HandleResetEvent;
         initialPosition = transform.position;
         boostLeft = boostSeconds;
         body = GetComponent<Rigidbody>();
@@ -84,13 +93,21 @@ public class BallMovement : MonoBehaviour
     {
         if (transform.position.y < -10)
         {
-            ResetPlayer();
+            resetHandler.Reset();
         }
+    }
+
+    public void HandleResetEvent(object sender)
+    {
+        ResetPlayer();
     }
 
     private void ResetPlayer()
     {
+        body.velocity = initialFacing.normalized;
+        body.angularVelocity = Vector3.zero;
         transform.position = initialPosition;
+        transform.forward = initialFacing;
         _facing = initialFacing;
     }
 
@@ -98,6 +115,21 @@ public class BallMovement : MonoBehaviour
     void FixedUpdate()
     {
         CheckIfFallen();
+        CalculateBoost();
+        MovePlayer();
+
+        if (commandedDirection.y > 0)
+            commandedDirection.y = 0;
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            resetHandler.Reset();
+
+        }
+    }
+
+    private void CalculateBoost()
+    {
         if (boostPressed)
         {
             if (boostLeft > 0)
@@ -113,6 +145,10 @@ public class BallMovement : MonoBehaviour
                 boostLeft = boostSeconds;
         }
         slider.value = boostLeft / boostSeconds;
+    }
+
+    private void MovePlayer()
+    {
         var forwardComponent = facing * (commandedDirection.z);
         var lateralComponent = Vector3.Cross(facing, Vector3.up) * -commandedDirection.x;
         var verticalComponent = new Vector3(0f, commandedDirection.y, 0f);
@@ -124,6 +160,14 @@ public class BallMovement : MonoBehaviour
             (forwardComponent * GetForceForward()
             + lateralComponent * GetForceSide()
             + verticalComponent * jumpForce) * Time.deltaTime;
+        if(driftPressed)
+        {
+            var driftForce = Vector3.Cross(facing, Vector3.up) * -driftDirection.x * body.velocity.magnitude * driftScale * Time.deltaTime;
+            driftForce -= facing * body.velocity.magnitude * driftScale * Time.deltaTime;
+            force += driftForce;
+        }
+
+
         body.AddForce(force);
 
         if (body.velocity.magnitude > 0.001)
@@ -138,14 +182,18 @@ public class BallMovement : MonoBehaviour
         Vector3 lateralVelocity = new Vector3(body.velocity.x, 0, body.velocity.z);
         if (lateralVelocity.magnitude > MaxSpeed())
             body.velocity = lateralVelocity.normalized * MaxSpeed() + new Vector3(0, body.velocity.y, 0);
+    }
 
-        if (commandedDirection.y > 0)
-            commandedDirection.y = 0;
-
-        if (Input.GetKeyDown(KeyCode.R))
+    public void Drift(InputAction.CallbackContext ctx)
+    {
+        if (ctx.performed)
         {
-            ResetPlayer();
-
+            driftPressed = true;
+            driftDirection = commandedDirection;
+        }
+        if (ctx.canceled)
+        {
+            driftPressed = false;
         }
     }
 
